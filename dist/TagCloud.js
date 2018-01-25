@@ -184,7 +184,7 @@ var TagCloud = function (_Component) {
 							style.color = _this3.props.style.color(item.child, index);
 						}
 						return _react2.default.cloneElement(item.child, _extends({}, item.child.props, {
-							key: item.text,
+							key: item.text+"_"+index,
 							style: style
 						}), item.child.props.children);
 					});
