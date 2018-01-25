@@ -130,7 +130,7 @@ class TagCloud extends Component {
 							item.child,
 							{
 								...item.child.props,
-								key: item.text,
+								key: item.text+"_"+index,
 								style: style,
 							},
 							item.child.props.children
